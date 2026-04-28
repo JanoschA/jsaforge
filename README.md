@@ -102,24 +102,6 @@ npm run start
 
 `npm run start` launches the built API server, which also serves the frontend from `dist/`.
 
-## Contact Form Flow
-
-The contact form works like in `sabrecommandtrainer`:
-
-- the frontend loads `/api/contact/config`
-- Cloudflare Turnstile creates a token
-- the backend validates the token server-side
-- the message is sent via SMTP using `nodemailer`
-
-## Replacing Assets
-
-You can replace logo, portrait and project images later in `public/assets/`:
-
-- `logo-forge.svg`
-- `portrait-placeholder.svg`
-- `project-placeholder.svg`
-- `sabre-command-trainer-home.png`
-
 ## AWS Lightsail
 
 The production deployment path is prepared in [deploy/aws/lightsail](./deploy/aws/lightsail/README.md):
