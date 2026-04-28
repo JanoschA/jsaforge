@@ -1,0 +1,17 @@
+<svg width="720" height="720" viewBox="0 0 720 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(220 180) rotate(44.6) scale(490 490)">
+      <stop stop-color="#F7F9FC"/>
+      <stop offset="1" stop-color="#E6EBF2"/>
+    </radialGradient>
+    <linearGradient id="hoodie" x1="240" y1="218" x2="480" y2="552" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#222A35"/>
+      <stop offset="1" stop-color="#0F141B"/>
+    </linearGradient>
+  </defs>
+  <circle cx="360" cy="360" r="340" fill="url(#bg)"/>
+  <circle cx="360" cy="286" r="92" fill="#D7C4B3"/>
+  <path d="M246 560C246 455.066 297.066 404 360 404C422.934 404 474 455.066 474 560H246Z" fill="url(#hoodie)"/>
+  <path d="M314 218C340 202 385 202 412 224C401 198 381 182 355 182C336 182 321 193 314 218Z" fill="#1B2028"/>
+  <path d="M318 237C336 218 382 211 409 230C421 238 426 254 426 268C426 330 397 360 360 360C323 360 294 330 294 268C294 257 298 245 318 237Z" fill="#DABFA9"/>
+</svg>

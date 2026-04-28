@@ -1,0 +1,49 @@
+<svg width="640" height="760" viewBox="0 0 640 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="steel" x1="76" y1="78" x2="546" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EFF3F7"/>
+      <stop offset="0.28" stop-color="#A8B0BB"/>
+      <stop offset="0.64" stop-color="#6F7782"/>
+      <stop offset="1" stop-color="#E0E5EA"/>
+    </linearGradient>
+    <linearGradient id="ember" x1="178" y1="430" x2="466" y2="632" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF8E57"/>
+      <stop offset="0.35" stop-color="#FF522D"/>
+      <stop offset="1" stop-color="#B71E14"/>
+    </linearGradient>
+    <filter id="shadow" x="28" y="36" width="584" height="688" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="18"/>
+      <feGaussianBlur stdDeviation="20"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.48 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_2"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_2" result="shape"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="760" rx="36" fill="#090C12"/>
+
+  <g filter="url(#shadow)">
+    <rect x="96" y="96" width="448" height="448" rx="10" stroke="url(#steel)" stroke-width="20"/>
+    <rect x="160" y="414" width="320" height="10" rx="5" fill="url(#ember)"/>
+
+    <path d="M203.162 186H262.447V427.214H182V367.929H203.162V186Z" fill="url(#steel)"/>
+    <path d="M288.224 186H392.315V240.818H339.446V286.455H384.12V341.272H339.446V372.396H399V427.214H288.224V186Z" fill="url(#steel)"/>
+    <path d="M419.401 427.214L469.318 186H522L571.918 427.214H518.13L511.133 387.693H480.186L473.189 427.214H419.401ZM488.93 338.661H502.389L495.66 289.629L488.93 338.661Z" fill="url(#steel)"/>
+
+    <path d="M176 498.956H240.796V531.597H212.663V554.568H236.341V587.209H212.663V639H176V498.956Z" fill="url(#ember)"/>
+    <path d="M263.417 498.956H322.645C340.635 498.956 354.862 503.731 365.326 513.279C375.79 522.592 381.023 536.197 381.023 554.094V584.838C381.023 602.499 375.79 616.105 365.326 625.653C354.862 635.2 340.635 639.974 322.645 639.974H263.417V498.956ZM309.174 531.597V607.334H319.273C327.589 607.334 333.586 605.142 337.262 600.758C340.939 596.374 342.777 589.962 342.777 581.523V557.409C342.777 548.969 340.939 542.557 337.262 538.173C333.586 533.789 327.589 531.597 319.273 531.597H309.174Z" fill="url(#ember)"/>
+    <path d="M403.367 498.956H499.455V531.597H440.03V553.383H490.221V586.024H440.03V606.359H499.455V639H403.367V498.956Z" fill="url(#ember)"/>
+  </g>
+
+  <g opacity="0.92">
+    <circle cx="168" cy="698" r="8" fill="#E44028"/>
+    <circle cx="320" cy="698" r="8" fill="#E44028"/>
+    <circle cx="472" cy="698" r="8" fill="#E44028"/>
+    <text x="114" y="716" fill="#CFD5DD" font-family="Arial, sans-serif" font-size="34" letter-spacing="11">BUILD</text>
+    <text x="246" y="716" fill="#CFD5DD" font-family="Arial, sans-serif" font-size="34" letter-spacing="11">CREATE</text>
+    <text x="396" y="716" fill="#CFD5DD" font-family="Arial, sans-serif" font-size="34" letter-spacing="11">DELIVER</text>
+  </g>
+</svg>

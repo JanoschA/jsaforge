@@ -1,0 +1,5 @@
+{$SITE_HOSTNAME}, www.{$SITE_HOSTNAME} {
+    encode gzip zstd
+
+    reverse_proxy app:3000
+}

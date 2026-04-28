@@ -1,0 +1,33 @@
+services:
+  app:
+    container_name: jsa-forge-app
+    image: ${APP_IMAGE:?APP_IMAGE is required}
+    env_file:
+      - .env.production
+    environment:
+      NODE_ENV: production
+      PORT: "3000"
+      STATIC_DIR: /app/dist
+    expose:
+      - "3000"
+    restart: unless-stopped
+
+  caddy:
+    container_name: jsa-forge-caddy
+    image: caddy:2-alpine
+    depends_on:
+      - app
+    env_file:
+      - .env.production
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    restart: unless-stopped
+
+volumes:
+  caddy_data:
+  caddy_config:
